@@ -1,5 +1,15 @@
 <template>
   <div>
-    <h1 class="text-4xl text-blue-600">Hello Nuxt!</h1>
+    <NuxtLayout>
+      <header>
+        <ui>
+          <li>
+            <NuxtLink to="/">Home</NuxtLink>
+            <NuxtLink to="/events">Events</NuxtLink>
+          </li>
+        </ui>
+      </header>
+      <NuxtPage />
+    </NuxtLayout>
   </div>
 </template>
